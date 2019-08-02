@@ -1,6 +1,7 @@
 package ybq.android.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import ybq.android.myapplication.activity.ExpandableRecyclerViewActivity;
 import ybq.android.myapplication.app.AppConstant;
 
 public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComViewHolder> {
@@ -37,6 +39,8 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
         viewHolder.tv.setOnClickListener(v -> {
             String title = mList.get(i);
             if (title.equals(AppConstant.LIST_TITLE1)) {
+                Intent intent = new Intent(mContext, ExpandableRecyclerViewActivity.class);
+                mContext.startActivity(intent);
             }
         });
 
