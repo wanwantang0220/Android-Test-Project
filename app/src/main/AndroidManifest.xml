@@ -21,7 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.ExpandableRecyclerViewActivity"></activity>
+        <activity android:name=".activity.CalendarDateActivity"></activity>
+        <activity android:name=".activity.ExpandableRecyclerViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

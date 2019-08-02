@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import ybq.android.myapplication.activity.CalendarDateActivity;
 import ybq.android.myapplication.activity.ExpandableRecyclerViewActivity;
 import ybq.android.myapplication.app.AppConstant;
 
@@ -40,6 +41,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
             String title = mList.get(i);
             if (title.equals(AppConstant.LIST_TITLE1)) {
                 Intent intent = new Intent(mContext, ExpandableRecyclerViewActivity.class);
+                mContext.startActivity(intent);
+            }else  if (title.equals(AppConstant.LIST_TITLE2)) {
+                Intent intent = new Intent(mContext, CalendarDateActivity.class);
                 mContext.startActivity(intent);
             }
         });
