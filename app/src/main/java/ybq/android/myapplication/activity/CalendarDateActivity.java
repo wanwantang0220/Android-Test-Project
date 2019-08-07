@@ -6,18 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 import ybq.android.myapplication.R;
-import ybq.android.myapplication.util.DateTest;
+import ybq.android.myapplication.util.DateUtil;
 
-import static ybq.android.myapplication.util.DateTest.getSevendate;
-import static ybq.android.myapplication.util.DateTest.getWeek;
-import static ybq.android.myapplication.util.DateTest.getWeekDay;
+import static ybq.android.myapplication.util.DateUtil.getSevendate;
 
 public class CalendarDateActivity extends AppCompatActivity {
 
@@ -29,9 +23,9 @@ public class CalendarDateActivity extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.tvDate);
 
-        List<DateTest.WeekDay> list = getSevendate();
+        List<DateUtil.WeekDay> list = getSevendate();
         String str = "";
-        for (DateTest.WeekDay  weekday : list) {
+        for (DateUtil.WeekDay  weekday : list) {
             str = str + weekday.week+"   "+weekday.day  +"\n";
             Log.i("TAG",weekday.week+"   "+weekday.day);
         }

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
-public class DateTest {
+public class DateUtil {
     /**
      * 获取今天往后一周的日期（几月几号）
      */
@@ -21,7 +21,7 @@ public class DateTest {
 
         List<WeekDay> list = new ArrayList<>();
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 14; i++) {
             String mYear ,mMonth,mDay;
             mYear = String.valueOf(c.get(Calendar.YEAR));// 获取当前年份
             mMonth = String.valueOf(c.get(Calendar.MONTH) + 1);// 获取当前月份
