@@ -15,6 +15,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Region;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -88,7 +89,24 @@ public class WaveView extends View {
 
         canvas.drawPath(path,paint);
 
+        //绘制头像
+        Rect bounds = region.getBounds();
+        Log.i("TAG","left = "+bounds.left+"  top = "+bounds.top);
 
+
+        if(bounds.top>0 || bounds.right>0){
+            float x = bounds.right-mBitmap.getWidth()/2;
+            float yTop = bounds.top-mBitmap.getHeight();
+            float ybottom = bounds.bottom-mBitmap.getHeight();
+            if(bounds.top<originY){ //从波峰滑落到基准线
+                canvas.drawBitmap(mBitmap,x,yTop,paint);
+            }else{
+                canvas.drawBitmap(mBitmap,x,ybottom,paint);
+            }
+        }else{
+            float x = width/2 - mBitmap.getWidth()/2;
+            canvas.drawBitmap(mBitmap,x,originY-mBitmap.getHeight(),paint);
+        }
     }
 
     private void setPathData() {
@@ -102,6 +120,12 @@ public class WaveView extends View {
              path.rQuadTo(halfWaveLength/2,-waveHeight,halfWaveLength,0); //相对坐标
              path.rQuadTo(halfWaveLength/2,waveHeight,halfWaveLength,0);//相对坐标
          }
+         //切割矩形
+         region = new Region();
+         float x = width /2;
+         Region clip = new Region((int) (x-0.1),0, (int) x,height);
+         region.setPath(path,clip);
+
          //曲线封闭
          path.lineTo(width,height);
          path.lineTo(0,height);
@@ -183,5 +207,12 @@ public class WaveView extends View {
             postInvalidate();
         });
         animator.start();
+    }
+
+
+    public  void  endAnimation(){
+        if(animator!=null){
+            animator.cancel();
+        }
     }
 }

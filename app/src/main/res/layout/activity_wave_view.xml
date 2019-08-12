@@ -8,12 +8,11 @@
 
     <ybq.android.myapplication.view.WaveView
         android:id="@+id/wave_view"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="300dp"
-       android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        app:waveLength="250dp"
-        app:waveHeight="25dp"
+        android:paddingStart="20dp"
+        app:boatBitmap="@mipmap/pic1"
         app:rise="true"
-        app:boatBitmap="@mipmap/pic1" />
+        app:waveHeight="25dp"
+        app:waveLength="250dp" />
 </RelativeLayout>
