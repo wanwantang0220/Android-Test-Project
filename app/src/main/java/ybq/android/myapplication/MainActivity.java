@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void initRecycleView() {
         mList.add(AppConstant.LIST_TITLE1);
         mList.add(AppConstant.LIST_TITLE2);
+        mList.add(AppConstant.LIST_TITLE3);
         
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         RecyclemAdapter adpter = new RecyclemAdapter(this);

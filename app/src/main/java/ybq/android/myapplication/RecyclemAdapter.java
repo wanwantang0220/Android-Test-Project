@@ -14,6 +14,7 @@ import java.util.List;
 
 import ybq.android.myapplication.activity.CalendarDateActivity;
 import ybq.android.myapplication.activity.ExpandableRecyclerViewActivity;
+import ybq.android.myapplication.activity.WaveViewActivity;
 import ybq.android.myapplication.app.AppConstant;
 
 public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComViewHolder> {
@@ -44,6 +45,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else  if (title.equals(AppConstant.LIST_TITLE2)) {
                 Intent intent = new Intent(mContext, CalendarDateActivity.class);
+                mContext.startActivity(intent);
+            }else  if (title.equals(AppConstant.LIST_TITLE3)) {
+                Intent intent = new Intent(mContext, WaveViewActivity.class);
                 mContext.startActivity(intent);
             }
         });
