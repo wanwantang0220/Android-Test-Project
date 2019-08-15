@@ -44,15 +44,18 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
             if (title.equals(AppConstant.LIST_TITLE0)) {
                 Intent intent = new Intent(mContext, KotlinMainActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE1)) {
+            } else if (title.equals(AppConstant.LIST_TITLE1)) {
                 Intent intent = new Intent(mContext, ExpandableRecyclerViewActivity.class);
                 mContext.startActivity(intent);
-            }else  if (title.equals(AppConstant.LIST_TITLE2)) {
+            } else if (title.equals(AppConstant.LIST_TITLE2)) {
                 Intent intent = new Intent(mContext, CalendarDateActivity.class);
                 mContext.startActivity(intent);
-            }else  if (title.equals(AppConstant.LIST_TITLE3)) {
+            } else if (title.equals(AppConstant.LIST_TITLE3)) {
                 Intent intent = new Intent(mContext, WaveViewActivity.class);
                 mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE4)) {
+//                Intent intent = new Intent(mContext, DsDiffActivity.class);
+//                mContext.startActivity(intent);
             }
         });
 
