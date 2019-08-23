@@ -7,6 +7,8 @@ public class AppConstant {
     public static final String LIST_TITLE1 = "ExpandableRecyclerView";
     public static final String LIST_TITLE2 = "Calendar Date";
     public static final String LIST_TITLE3 = " 水波纹效果  ";
-    public static final String LIST_TITLE4 = " 增量升级  ";
+    public static final String LIST_TITLE4 = " 增量升级   另一个项目Demo中";
+
+    public static final String LIST_TITLE5 = " Kotlin课堂2  Kotlin 里那些「不是那么写的」";
 
 }

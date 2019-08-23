@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(AppConstant.LIST_TITLE1);
         mList.add(AppConstant.LIST_TITLE2);
         mList.add(AppConstant.LIST_TITLE3);
-        mList.add(AppConstant.LIST_TITLE4);
+        mList.add(AppConstant.LIST_TITLE5);
 
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

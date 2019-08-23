@@ -32,7 +32,8 @@
         <activity android:name=".activity.WaveViewActivity" />
         <activity android:name=".activity.CalendarDateActivity" />
         <activity android:name=".activity.ExpandableRecyclerViewActivity" />
-        <activity android:name=".activity.KotlinMainActivity"/>
+        <activity android:name=".activity.KotlinMainActivity" />
+        <activity android:name=".activity.KotlinBasic2Activity"/>
     </application>
 
 </manifest>
