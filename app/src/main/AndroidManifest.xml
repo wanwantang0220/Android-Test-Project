@@ -33,7 +33,8 @@
         <activity android:name=".activity.CalendarDateActivity" />
         <activity android:name=".activity.ExpandableRecyclerViewActivity" />
         <activity android:name=".activity.KotlinMainActivity" />
-        <activity android:name=".activity.KotlinBasic2Activity"/>
+        <activity android:name=".activity.KotlinBasic2Activity" />
+        <activity android:name=".activity.KotlinBasic3Activity"/>
     </application>
 
 </manifest>

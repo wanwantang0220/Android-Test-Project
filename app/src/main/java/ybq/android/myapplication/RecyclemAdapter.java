@@ -15,6 +15,7 @@ import java.util.List;
 import ybq.android.myapplication.activity.CalendarDateActivity;
 import ybq.android.myapplication.activity.ExpandableRecyclerViewActivity;
 import ybq.android.myapplication.activity.KotlinBasic2Activity;
+import ybq.android.myapplication.activity.KotlinBasic3Activity;
 import ybq.android.myapplication.activity.KotlinMainActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
 import ybq.android.myapplication.app.AppConstant;
@@ -56,6 +57,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             } else if (title.equals(AppConstant.LIST_TITLE5)) {
                 Intent intent = new Intent(mContext, KotlinBasic2Activity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE6)) {
+                Intent intent = new Intent(mContext, KotlinBasic3Activity.class);
                 mContext.startActivity(intent);
             }
         });
