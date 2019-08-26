@@ -35,7 +35,6 @@ class KotlinBasic3Activity : AppCompatActivity() {
         val minfo2 = student2?.name + student2?.sex +"\n"
         val minfo3 = student3?.name + student3?.sex +"\n"
         mInfo += mInfo + minfo1+ minfo2 + minfo3
-
         tvShow.text = mInfo +showInfo()
 
         initArray()
