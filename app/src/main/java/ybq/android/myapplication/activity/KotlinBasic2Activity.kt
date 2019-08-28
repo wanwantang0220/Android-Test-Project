@@ -1,8 +1,8 @@
 package ybq .android.myapplication.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import ybq.android.myapplication.R
 import ybq.android.myapplication.bean.User
 

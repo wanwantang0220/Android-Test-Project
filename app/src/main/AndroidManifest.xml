@@ -21,7 +21,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".activity.TenActivity"></activity>
+        <activity android:name=".activity.NineActivity" />
+        <activity android:name=".activity.EightActivity" />
+        <activity android:name=".activity.SevenActivity" />
+        <activity android:name=".activity.TestActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +38,7 @@
         <activity android:name=".activity.ExpandableRecyclerViewActivity" />
         <activity android:name=".activity.KotlinMainActivity" />
         <activity android:name=".activity.KotlinBasic2Activity" />
-        <activity android:name=".activity.KotlinBasic3Activity"/>
+        <activity android:name=".activity.KotlinBasic3Activity" />
     </application>
 
 </manifest>

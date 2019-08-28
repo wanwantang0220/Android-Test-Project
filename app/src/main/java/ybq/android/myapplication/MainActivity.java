@@ -1,9 +1,10 @@
 package ybq.android.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         mList.add(AppConstant.LIST_TITLE3);
         mList.add(AppConstant.LIST_TITLE5);
         mList.add(AppConstant.LIST_TITLE6);
+        mList.add(AppConstant.LIST_TITLE7);
+        mList.add(AppConstant.LIST_TITLE8);
+        mList.add(AppConstant.LIST_TITLE9);
+        mList.add(AppConstant.LIST_TITLE10);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         RecyclemAdapter adpter = new RecyclemAdapter(this);
