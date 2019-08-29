@@ -16,6 +16,11 @@
         android:textColor="@color/white"
         android:background="@color/big_title"/>
 
+    <ybq.android.myapplication.view.ViewFirst
+        android:id="@+id/myViewFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,4 +33,10 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_animation"
         android:tint="@color/color_blue"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
