@@ -7,11 +7,14 @@ import androidx.recyclerview.widget.RecyclerView
 import ybq.android.myapplication.R
 import ybq.android.myapplication.adapter.SevenListAdapter
 import ybq.android.myapplication.bean.Person
+import ybq.android.myapplication.view.PathPaintView
 import ybq.android.myapplication.view.ViewFirst
+import ybq.android.myapplication.view.ViewPaintPath
 
 class SevenActivity : AppCompatActivity() {
 
     lateinit var myViewFirst: ViewFirst
+    lateinit var paintPath : PathPaintView
     lateinit var recyclerView: RecyclerView
     var infos: ArrayList<Person> = ArrayList()
 
@@ -41,6 +44,7 @@ class SevenActivity : AppCompatActivity() {
 
     private fun initView() {
         myViewFirst = findViewById(R.id.myViewFirst)
+        paintPath = findViewById(R.id.paintPath)
         recyclerView = findViewById(R.id.recyclerView)
     }
 }
