@@ -12,8 +12,8 @@ public class AppConstant {
     public static final String LIST_TITLE6 = " Kotlin课堂3  Kotlin 里那些「更方便的」";
     public static final String LIST_TITLE7 = " 自定义 View 1-1 绘制基础";
     public static final String LIST_TITLE8 = " 自定义 View 1-2 Paint 详解";
-    public static final String LIST_TITLE9 = " 课堂 9 ";
-    public static final String LIST_TITLE10 = " 课堂 10 ";
+    public static final String LIST_TITLE9 = " 自定义 View 1-4 Canvas 对绘制的辅助 clipXXX() 和 Matrix ";
+    public static final String LIST_TITLE10 = " 自定义 View 1-5 绘制顺序";
 
 
 }
