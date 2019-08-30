@@ -12,12 +12,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ybq.android.myapplication.view.PaintView3
+                android:id="@+id/paintView3"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"/>
+
+            <ybq.android.myapplication.view.PaintView2
+                android:id="@+id/paintView2"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"/>
 
             <ybq.android.myapplication.view.PaintView
-
+                android:id="@+id/paintView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="1500dp"/>
+
+
+
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
