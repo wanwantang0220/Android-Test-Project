@@ -17,7 +17,6 @@ class EightActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_eight)
         initView()
-
     }
 
     private fun initView() {
