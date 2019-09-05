@@ -21,11 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.TenActivity"></activity>
+        <activity android:name=".activity.TenActivity"/>
         <activity android:name=".activity.NineActivity" />
         <activity android:name=".activity.EightActivity" />
         <activity android:name=".activity.SevenActivity" />
-        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".hencoder.HenderMainActivity"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

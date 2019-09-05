@@ -24,6 +24,7 @@ import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.TenActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
 import ybq.android.myapplication.app.AppConstant;
+import ybq.android.myapplication.hencoder.HenderMainActivity;
 
 public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComViewHolder> {
 
@@ -76,7 +77,7 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 Intent intent = new Intent(mContext, NineActivity.class);
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE10)) {
-                Intent intent = new Intent(mContext, TenActivity.class);
+                Intent intent = new Intent(mContext, HenderMainActivity.class);
                 mContext.startActivity(intent);
             }
         });
