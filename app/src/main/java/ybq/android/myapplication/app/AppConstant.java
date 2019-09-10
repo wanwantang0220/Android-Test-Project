@@ -14,6 +14,6 @@ public class AppConstant {
     public static final String LIST_TITLE8 = " 自定义 View 1-2 Paint 详解";
     public static final String LIST_TITLE9 = " 自定义 View 1-4 Canvas 对绘制的辅助 clipXXX() 和 Matrix ";
     public static final String LIST_TITLE10 = " 自定义 View 1-5 绘制顺序";
-
+    public static final String LIST_TITLE11 = " Kotlin  协程";
 
 }

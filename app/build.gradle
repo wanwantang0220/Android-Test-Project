@@ -40,4 +40,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
     implementation 'org.jetbrains:annotations:15.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //协程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
 }
