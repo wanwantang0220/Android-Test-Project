@@ -20,6 +20,7 @@ import ybq.android.myapplication.activity.KotlinBasic2Activity;
 import ybq.android.myapplication.activity.KotlinBasic3Activity;
 import ybq.android.myapplication.activity.KotlinLaunchActivity;
 import ybq.android.myapplication.activity.KotlinMainActivity;
+import ybq.android.myapplication.activity.LottieAnimationActivity;
 import ybq.android.myapplication.activity.NineActivity;
 import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.TenActivity;
@@ -82,6 +83,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE11)) {
                 Intent intent = new Intent(mContext, KotlinLaunchActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE12)) {
+                Intent intent = new Intent(mContext, LottieAnimationActivity.class);
                 mContext.startActivity(intent);
             }
         });

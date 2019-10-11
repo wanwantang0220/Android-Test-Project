@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mList.add(AppConstant.LIST_TITLE9);
         mList.add(AppConstant.LIST_TITLE10);
         mList.add(AppConstant.LIST_TITLE11);
+        mList.add(AppConstant.LIST_TITLE12);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         RecyclemAdapter adpter = new RecyclemAdapter(this);

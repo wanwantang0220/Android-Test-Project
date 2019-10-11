@@ -3,20 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ybq.android.myapplication">
 
-
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission
-        android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-
+        <activity android:name=".activity.LottieAnimationActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,15 +25,22 @@
         <activity android:name=".activity.KotlinMainActivity" />
         <activity android:name=".activity.KotlinBasic2Activity" />
         <activity android:name=".activity.KotlinBasic3Activity" />
-        <activity android:name=".activity.KotlinLaunchActivity"/>
+        <activity android:name=".activity.KotlinLaunchActivity" />
         <activity android:name=".activity.TenActivity" />
         <activity android:name=".activity.NineActivity" />
         <activity android:name=".activity.EightActivity" />
         <activity android:name=".activity.SevenActivity" />
         <activity android:name=".hencoder.HenderMainActivity" />
-
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
