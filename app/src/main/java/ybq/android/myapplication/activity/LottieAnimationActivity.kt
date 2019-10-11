@@ -18,7 +18,7 @@ class LottieAnimationActivity : AppCompatActivity() {
 
 
         animationView = findViewById(R.id.animation_view)
-        animationView.setAnimation(R.raw.walkthrough)
+        animationView.setAnimation(R.raw.lottielogo1)
         animationView.loop(false)
         animationView.playAnimation()
 
