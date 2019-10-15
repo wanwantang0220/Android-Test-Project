@@ -55,6 +55,11 @@ class HomeAdapter(context: Context) : RecyclerView.Adapter<HomeAdapter.MyViewHol
         this.mClickListener = itemClickListener
     }
 
+
+    fun getItem(position: Int):Article{
+        return  mList[position]
+    }
+
     fun setDatas(items: List<Article>) {
         mList.clear()
         mList.addAll(items)

@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
+import me.yokeyword.fragmentation.anim.FragmentAnimator
 import ybq.android.myapplication.R
 import ybq.android.myapplication.adapter.MyViewPagerAdapter
-import ybq.android.myapplication.fragment.FirstFragment
 import ybq.android.myapplication.fragment.SecondFragment
 import ybq.android.myapplication.fragment.ThirdFragment
 
 
-class TabFragmentActivity : AppCompatActivity() {
+class TabFragmentActivity : MySupportActivity() {
 
     lateinit var tabLayout: TabLayout
     lateinit var viewPager: ViewPager
@@ -29,7 +29,7 @@ class TabFragmentActivity : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("test2"))
         tabLayout.addTab(tabLayout.newTab().setText("test3"))
 
-        val fragments =  ArrayList<Fragment>()
+        val fragments = ArrayList<Fragment>()
         fragments.add(Fragment())
         fragments.add(SecondFragment())
         fragments.add(ThirdFragment())
@@ -56,7 +56,7 @@ class TabFragmentActivity : AppCompatActivity() {
         })
 
 
-        viewPager.addOnPageChangeListener(object :ViewPager.OnPageChangeListener{
+        viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) {
             }
 
@@ -70,5 +70,18 @@ class TabFragmentActivity : AppCompatActivity() {
 
         })
     }
+
+    /**
+     * 设置动画，也可以使用setFragmentAnimator()设置
+     */
+    override fun onCreateFragmentAnimator(): FragmentAnimator {
+        // 设置默认Fragment动画  默认竖向(和安卓5.0以上的动画相同)
+        return super.onCreateFragmentAnimator()
+        // 设置横向(和安卓4.x动画相同)
+        //        return new DefaultHorizontalAnimator();
+        // 设置自定义动画
+        //        return new FragmentAnimator(enter,exit,popEnter,popExit);
+    }
+
 
 }

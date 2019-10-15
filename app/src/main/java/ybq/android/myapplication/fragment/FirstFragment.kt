@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.coroutines.NonCancellable.start
 
 import ybq.android.myapplication.R
 import ybq.android.myapplication.adapter.HomeAdapter
@@ -18,7 +17,7 @@ import java.util.ArrayList
 /**
  * A simple [Fragment] subclass.
  */
-class FirstFragment : Fragment() {
+class FirstFragment : MySupportFragment() {
 
     lateinit var recyclerView: RecyclerView
 
@@ -51,7 +50,7 @@ class FirstFragment : Fragment() {
 
         mAdapter?.setOnItemClickListener(object : HomeAdapter.OnItemClickListener {
             override fun onItemClick(position: Int, view: View) {
-
+                start(DetailFragment.newInstance(mAdapter!!.getItem(position).title))
             }
         })
 
@@ -66,6 +65,5 @@ class FirstFragment : Fragment() {
     }
 
 
-//    start(DetailFragment.newInstance(mAdapter.getItem(position).getTitle()))
 
 }
