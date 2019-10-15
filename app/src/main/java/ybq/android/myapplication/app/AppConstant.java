@@ -16,4 +16,5 @@ public class AppConstant {
     public static final String LIST_TITLE10 = " 自定义 View 1-5 绘制顺序";
     public static final String LIST_TITLE11 = " Kotlin  协程";
     public static final String LIST_TITLE12 = " Lottie ";
+    public static final String LIST_TITLE13 = " Fragmentation的使用 ";
 }

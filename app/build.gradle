@@ -37,6 +37,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
 
     implementation 'com.jakewharton:butterknife:10.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
     implementation 'org.jetbrains:annotations:15.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -46,4 +47,8 @@ dependencies {
 
     /**动画**/
     implementation 'com.airbnb.android:lottie:2.8.0'
+
+    //Fragmentation
+    implementation 'me.yokeyword:fragmentationx:1.0.1'
+
 }
