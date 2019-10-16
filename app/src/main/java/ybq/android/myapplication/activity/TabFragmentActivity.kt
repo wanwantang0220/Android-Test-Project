@@ -8,6 +8,7 @@ import com.google.android.material.tabs.TabLayout
 import me.yokeyword.fragmentation.anim.FragmentAnimator
 import ybq.android.myapplication.R
 import ybq.android.myapplication.adapter.MyViewPagerAdapter
+import ybq.android.myapplication.fragment.FirstFragment
 import ybq.android.myapplication.fragment.SecondFragment
 import ybq.android.myapplication.fragment.ThirdFragment
 
@@ -30,12 +31,12 @@ class TabFragmentActivity : MySupportActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("test3"))
 
         val fragments = ArrayList<Fragment>()
-        fragments.add(Fragment())
+        fragments.add(FirstFragment())
         fragments.add(SecondFragment())
         fragments.add(ThirdFragment())
 
         //自定义的Adapter继承自FragmentPagerAdapter
-        val pagerAdapter = MyViewPagerAdapter(supportFragmentManager, tabLayout.tabCount)
+        val pagerAdapter = MyViewPagerAdapter(supportFragmentManager, fragments)
         viewPager.adapter = pagerAdapter
 
 

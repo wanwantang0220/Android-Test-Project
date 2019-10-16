@@ -17,4 +17,5 @@ public class AppConstant {
     public static final String LIST_TITLE11 = " Kotlin  协程";
     public static final String LIST_TITLE12 = " Lottie ";
     public static final String LIST_TITLE13 = " Fragmentation的使用 ";
+    public static final String LIST_TITLE14 = " Zhi Hu Fragmentation的使用 ";
 }

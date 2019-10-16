@@ -50,7 +50,11 @@ class FirstFragment : MySupportFragment() {
 
         mAdapter?.setOnItemClickListener(object : HomeAdapter.OnItemClickListener {
             override fun onItemClick(position: Int, view: View) {
-                start(DetailFragment.newInstance(mAdapter!!.getItem(position).title))
+                if(position==0){
+                    start(DetailFragment.newInstance(mAdapter!!.getItem(position).title))
+                }else{
+
+                }
             }
         })
 

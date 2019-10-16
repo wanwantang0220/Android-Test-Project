@@ -13,29 +13,22 @@ import ybq.android.myapplication.R
 /**
  * A simple [Fragment] subclass.
  */
-class SecondFragment : MySupportFragment() {
+class SecondHomeFragment : SupportFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        return inflater.inflate(R.layout.fragment_second_home, container, false)
     }
 
-
-    override fun onLazyInitView(savedInstanceState: Bundle?) {
-        super.onLazyInitView(savedInstanceState)
-
-    }
 
     companion object{
 
-        fun newInstance():SecondFragment{
-            val fragment = SecondFragment()
+        fun  newInstance():SecondHomeFragment{
+            val fragment = SecondHomeFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment
         }
-
     }
-
 }

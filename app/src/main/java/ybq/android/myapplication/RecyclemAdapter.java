@@ -26,6 +26,7 @@ import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.TabFragmentActivity;
 import ybq.android.myapplication.activity.TenActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
+import ybq.android.myapplication.activity.ZhiHuFragmentActivity;
 import ybq.android.myapplication.app.AppConstant;
 import ybq.android.myapplication.hencoder.HenderMainActivity;
 
@@ -90,6 +91,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE13)) {
                 Intent intent = new Intent(mContext, TabFragmentActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE14)) {
+                Intent intent = new Intent(mContext, ZhiHuFragmentActivity.class);
                 mContext.startActivity(intent);
             }
         });

@@ -1,31 +1,28 @@
 package ybq.android.myapplication.adapter
 
-import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import ybq.android.myapplication.fragment.FirstFragment
-import ybq.android.myapplication.fragment.SecondFragment
-import ybq.android.myapplication.fragment.ThirdFragment
 
-class MyViewPagerAdapter(fm : FragmentManager, numtabs :Int) : FragmentPagerAdapter(fm) {
+class MyViewPagerAdapter(fm : FragmentManager, fragments: ArrayList<Fragment>) : FragmentPagerAdapter(fm) {
 
-    val nNum = numtabs
+    val nNum = fragments.size
+    val mFragment = fragments
 
     override fun getItem(position: Int): Fragment? {
         when (position) {
             0 -> {
-                return FirstFragment()
+                return mFragment[0]
             }
             1 -> {
-                return SecondFragment()
+                return mFragment[1]
             }
             2 -> {
-                return ThirdFragment()
+                return mFragment[2]
             }
         }
-        return null
+        return mFragment[0]
     }
 
     override fun getCount(): Int {
