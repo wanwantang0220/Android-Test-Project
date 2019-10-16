@@ -9,7 +9,7 @@ import ybq.android.myapplication.R
 
 open class MySupportActivity : AppCompatActivity() , ISupportActivity {
 
-    internal val mDelegate = SupportActivityDelegate(this)
+    private val mDelegate = SupportActivityDelegate(this)
 
     override fun getSupportDelegate(): SupportActivityDelegate {
         return mDelegate
