@@ -45,5 +45,6 @@
     <color name="transparent">@android:color/transparent</color>
     <color name="gray">#C4C4C4</color>
 
-
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
 </resources>

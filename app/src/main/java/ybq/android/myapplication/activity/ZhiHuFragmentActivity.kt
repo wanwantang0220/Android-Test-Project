@@ -1,22 +1,23 @@
 package ybq.android.myapplication.activity
 
 import android.os.Bundle
-import android.widget.Button
+import androidx.core.app.ActivityCompat
 import me.yokeyword.fragmentation.SupportActivity
 import me.yokeyword.fragmentation.SupportFragment
 import ybq.android.myapplication.R
+import ybq.android.myapplication.fragment.BaseMainFragment
 import ybq.android.myapplication.fragment.FirstHomeFragment
 import ybq.android.myapplication.fragment.SecondHomeFragment
+import ybq.android.myapplication.view.BottomBar
+import ybq.android.myapplication.view.BottomBarTab
 
-class ZhiHuFragmentActivity : SupportActivity() {
+class ZhiHuFragmentActivity : SupportActivity(), BaseMainFragment.OnBackToFirstListener {
+
 
     private val FIRST = 0
     private val SECOND = 1
 
-    lateinit var btn1: Button
-    lateinit var btn2: Button
-
-
+    lateinit var bottomBar:BottomBar
     private val mFragments = arrayOfNulls<SupportFragment>(2)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,15 +45,52 @@ class ZhiHuFragmentActivity : SupportActivity() {
 
     private fun initView() {
 
-        btn1 = findViewById(R.id.btn1)
-        btn2 = findViewById(R.id.btn2)
+        bottomBar = findViewById(R.id.bottom_bar)
 
-        btn1.setOnClickListener {
-            showHideFragment(mFragments[FIRST], mFragments[SECOND])
-        }
+        bottomBar.addItem(BottomBarTab(this, R.drawable.j1))
+                .addItem(BottomBarTab(this, R.drawable.j2))
 
-        btn2.setOnClickListener {
-            showHideFragment(mFragments[SECOND], mFragments[FIRST])
+        bottomBar.setOnTabSelectedListener(object : BottomBar.OnTabSelectedListener {
+            override fun onTabSelected(position: Int, prePosition: Int) {
+                showHideFragment(mFragments[position], mFragments[prePosition])
+            }
+
+            override fun onTabUnselected(position: Int) {
+
+            }
+
+            override fun onTabReselected(position: Int) {
+                val currentFragment = mFragments[position]
+                val count = currentFragment?.childFragmentManager?.backStackEntryCount
+
+                // 如果不在该类别Fragment的主页,则回到主页;
+                if (count!! > 1) {
+                    if (currentFragment is FirstHomeFragment) {
+                        currentFragment.popToChild(FirstHomeFragment::class.java, false)
+                    } else if (currentFragment is SecondHomeFragment) {
+                        currentFragment.popToChild(SecondHomeFragment::class.java, false)
+                    }
+                    return
+                }
+
+            }
+        })
+
+
+    }
+
+
+    override fun onBackPressedSupport() {
+        if (supportFragmentManager.backStackEntryCount > 1) {
+            pop()
+        } else {
+            ActivityCompat.finishAfterTransition(this)
         }
     }
+
+    override fun onBackToFirstFragment() {
+        bottomBar.setCurrentItem(0)
+    }
+
+
 }
