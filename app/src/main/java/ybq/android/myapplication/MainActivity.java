@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initRecycleView() {
+        mList.add(AppConstant.LIST_TITLE16);
         mList.add(AppConstant.LIST_TITLE0);
         mList.add(AppConstant.LIST_TITLE1);
         mList.add(AppConstant.LIST_TITLE2);
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         mList.add(AppConstant.LIST_TITLE12);
         mList.add(AppConstant.LIST_TITLE13);
         mList.add(AppConstant.LIST_TITLE14);
+        mList.add(AppConstant.LIST_TITLE15);
+
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         RecyclemAdapter adpter = new RecyclemAdapter(this);

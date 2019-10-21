@@ -51,4 +51,10 @@ dependencies {
     //Fragmentation
     implementation 'me.yokeyword:fragmentationx:1.0.1'
 
+    //Google VR
+    implementation 'com.google.vr:sdk-panowidget:1.80.0'
+
+    //OpenGL实现全景图
+    //implementation 'com.github.CN-ZPH:weibo360panorama:v1.0.1'
+    implementation project(":glpanoramalib")
 }

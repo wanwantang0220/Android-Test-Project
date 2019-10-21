@@ -10,7 +10,7 @@ class MyViewPagerAdapter(fm : FragmentManager, fragments: ArrayList<Fragment>) :
     val nNum = fragments.size
     val mFragment = fragments
 
-    override fun getItem(position: Int): Fragment? {
+    override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> {
                 return mFragment[0]

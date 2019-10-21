@@ -13,7 +13,7 @@ import ybq.android.myapplication.R
 /**
  * A simple [Fragment] subclass.
  */
-class SecondHomeFragment : SupportFragment() {
+class ZhiHuSecondFragment : SupportFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -24,8 +24,8 @@ class SecondHomeFragment : SupportFragment() {
 
     companion object{
 
-        fun  newInstance():SecondHomeFragment{
-            val fragment = SecondHomeFragment()
+        fun  newInstance():ZhiHuSecondFragment{
+            val fragment = ZhiHuSecondFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment

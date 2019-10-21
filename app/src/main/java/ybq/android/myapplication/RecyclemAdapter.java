@@ -23,6 +23,8 @@ import ybq.android.myapplication.activity.KotlinMainActivity;
 import ybq.android.myapplication.activity.LottieAnimationActivity;
 import ybq.android.myapplication.activity.NineActivity;
 import ybq.android.myapplication.activity.SevenActivity;
+import ybq.android.myapplication.activity.T360OpenGLActivity;
+import ybq.android.myapplication.activity.T36PanoramaActivity;
 import ybq.android.myapplication.activity.TabFragmentActivity;
 import ybq.android.myapplication.activity.TenActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
@@ -94,6 +96,12 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE14)) {
                 Intent intent = new Intent(mContext, ZhiHuFragmentActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE15)) {
+                Intent intent = new Intent(mContext, T36PanoramaActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE16)) {
+                Intent intent = new Intent(mContext, T360OpenGLActivity.class);
                 mContext.startActivity(intent);
             }
         });

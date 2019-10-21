@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import me.yokeyword.fragmentation.SupportFragment
 
 import ybq.android.myapplication.R
 import ybq.android.myapplication.adapter.FirstHomeAdapter
@@ -21,7 +20,7 @@ import java.util.ArrayList
 /**
  * A simple [Fragment] subclass.
  */
-class FirstHomeFragment : BaseMainFragment(),SwipeRefreshLayout.OnRefreshListener {
+class ZhiHuFirstFragment : BaseMainFragment(),SwipeRefreshLayout.OnRefreshListener {
 
 
     lateinit var refreshLayout: SwipeRefreshLayout
@@ -84,10 +83,14 @@ class FirstHomeFragment : BaseMainFragment(),SwipeRefreshLayout.OnRefreshListene
         refreshLayout.postDelayed(Runnable { refreshLayout.isRefreshing = false }, 2000)
     }
 
+    override fun onBackPressedSupport(): Boolean {
+        return super.onBackPressedSupport()
+    }
+
     companion object{
 
-        fun newInstance():FirstHomeFragment{
-            val fragment = FirstHomeFragment()
+        fun newInstance():ZhiHuFirstFragment{
+            val fragment = ZhiHuFirstFragment()
             val args = Bundle()
             fragment.arguments = args
             return fragment

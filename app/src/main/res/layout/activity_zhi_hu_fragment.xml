@@ -12,9 +12,15 @@
         android:layout_height="match_parent"/>
 
     <ybq.android.myapplication.view.BottomBar
-        android:id="@+id/bottom_bar"
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/bottombar_height"
         android:layout_gravity="bottom"/>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/actionbar_shadow_up"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/bottombar_height"
+        android:layout_height="wrap_content"/>
 </FrameLayout>

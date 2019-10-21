@@ -47,6 +47,9 @@ class FirstDetailFragment : SupportFragment() {
         mTvTitle.text = mArticle!!.title
     }
 
+    override fun onBackPressedSupport(): Boolean {
+        return super.onBackPressedSupport()
+    }
     companion object{
 
         private val ARG_ITEM = "arg_item"
