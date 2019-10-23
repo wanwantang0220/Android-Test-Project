@@ -62,4 +62,10 @@ dependencies {
     //流式布局
     implementation 'com.google.android:flexbox:1.1.1'
     compile project(path: ':rvmultilib')
+
+    /** Vlayout **/
+    implementation('com.alibaba.android:vlayout:1.2.22@aar') {
+        transitive = true
+    }
+
 }

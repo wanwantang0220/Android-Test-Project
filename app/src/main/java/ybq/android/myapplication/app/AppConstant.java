@@ -22,7 +22,7 @@ public class AppConstant {
     public static final String LIST_TITLE16 = " 全景图片显示 OPEN GL";
     public static final String LIST_TITLE17 = " 养老版首页";
     public static final String LIST_TITLE18 = " RecycleView 多布局不规则";
-
-
-
+    public static final String LIST_TITLE19 = " RecycleView layout_staggered_grid";
+    public static final String LIST_TITLE20 = " RecycleView layout_spannable_grid";
+    public static final String LIST_TITLE21 = " RecycleView 自定义";
 }

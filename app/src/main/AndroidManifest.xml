@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".activity.RecycleViewMultiActivity"></activity>
+        <activity android:name=".activity.LayoutMyStyleActivity"></activity>
+        <activity android:name=".activity.LayoutSpannableGridActivity" />
+        <activity android:name=".activity.LayoutStaggeredGridActivity" />
+        <activity android:name=".activity.RecycleViewMultiActivity" />
         <activity android:name=".activity.YunLinOldActivity" />
         <activity android:name=".activity.T360OpenGLActivity" />
         <activity android:name=".activity.T36PanoramaActivity" />
@@ -39,15 +42,15 @@
         <activity android:name=".activity.SevenActivity" />
         <activity android:name=".hencoder.HenderMainActivity" />
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
 </manifest>

@@ -20,6 +20,9 @@ import ybq.android.myapplication.activity.KotlinBasic2Activity;
 import ybq.android.myapplication.activity.KotlinBasic3Activity;
 import ybq.android.myapplication.activity.KotlinLaunchActivity;
 import ybq.android.myapplication.activity.KotlinMainActivity;
+import ybq.android.myapplication.activity.LayoutMyStyleActivity;
+import ybq.android.myapplication.activity.LayoutSpannableGridActivity;
+import ybq.android.myapplication.activity.LayoutStaggeredGridActivity;
 import ybq.android.myapplication.activity.LottieAnimationActivity;
 import ybq.android.myapplication.activity.NineActivity;
 import ybq.android.myapplication.activity.RecycleViewMultiActivity;
@@ -27,7 +30,6 @@ import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.T360OpenGLActivity;
 import ybq.android.myapplication.activity.T36PanoramaActivity;
 import ybq.android.myapplication.activity.TabFragmentActivity;
-import ybq.android.myapplication.activity.TenActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
 import ybq.android.myapplication.activity.YunLinOldActivity;
 import ybq.android.myapplication.activity.ZhiHuFragmentActivity;
@@ -75,41 +77,50 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
             } else if (title.equals(AppConstant.LIST_TITLE6)) {
                 Intent intent = new Intent(mContext, KotlinBasic3Activity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE7)) {
+            } else if (title.equals(AppConstant.LIST_TITLE7)) {
                 Intent intent = new Intent(mContext, SevenActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE8)) {
+            } else if (title.equals(AppConstant.LIST_TITLE8)) {
                 Intent intent = new Intent(mContext, EightActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE9)) {
+            } else if (title.equals(AppConstant.LIST_TITLE9)) {
                 Intent intent = new Intent(mContext, NineActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE10)) {
+            } else if (title.equals(AppConstant.LIST_TITLE10)) {
                 Intent intent = new Intent(mContext, HenderMainActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE11)) {
+            } else if (title.equals(AppConstant.LIST_TITLE11)) {
                 Intent intent = new Intent(mContext, KotlinLaunchActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE12)) {
+            } else if (title.equals(AppConstant.LIST_TITLE12)) {
                 Intent intent = new Intent(mContext, LottieAnimationActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE13)) {
+            } else if (title.equals(AppConstant.LIST_TITLE13)) {
                 Intent intent = new Intent(mContext, TabFragmentActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE14)) {
+            } else if (title.equals(AppConstant.LIST_TITLE14)) {
                 Intent intent = new Intent(mContext, ZhiHuFragmentActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE15)) {
+            } else if (title.equals(AppConstant.LIST_TITLE15)) {
                 Intent intent = new Intent(mContext, T36PanoramaActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE16)) {
+            } else if (title.equals(AppConstant.LIST_TITLE16)) {
                 Intent intent = new Intent(mContext, T360OpenGLActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE17)) {
+            } else if (title.equals(AppConstant.LIST_TITLE17)) {
                 Intent intent = new Intent(mContext, YunLinOldActivity.class);
                 mContext.startActivity(intent);
-            }else if (title.equals(AppConstant.LIST_TITLE18)) {
+            } else if (title.equals(AppConstant.LIST_TITLE18)) {
                 Intent intent = new Intent(mContext, RecycleViewMultiActivity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE19)) {
+                Intent intent = new Intent(mContext, LayoutStaggeredGridActivity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE20)) {
+                Intent intent = new Intent(mContext, LayoutSpannableGridActivity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE21)) {
+                Intent intent = new Intent(mContext, LayoutMyStyleActivity.class);
                 mContext.startActivity(intent);
             }
         });

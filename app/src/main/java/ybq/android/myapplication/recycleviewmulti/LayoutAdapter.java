@@ -19,7 +19,7 @@ import java.util.List;
 
 import ybq.android.myapplication.R;
 
-public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.SimpleViewHolder> {
+public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.MSimpleViewHolder> {
     private static final int COUNT = 100;
 
     private final Context mContext;
@@ -53,13 +53,13 @@ public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.SimpleView
     }
 
     @Override
-    public SimpleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MSimpleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         final View view = LayoutInflater.from(mContext).inflate(R.layout.layout_item, parent, false);
-        return new SimpleViewHolder(view);
+        return new MSimpleViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(SimpleViewHolder holder, int position) {
+    public void onBindViewHolder(MSimpleViewHolder holder, int position) {
         holder.title.setText(mItems.get(position).toString());
 
         boolean isVertical = (mRecyclerView.getOrientation() == TwoWayLayoutManager.Orientation.VERTICAL);
@@ -124,10 +124,10 @@ public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.SimpleView
     }
 
 
-    public static class SimpleViewHolder extends RecyclerView.ViewHolder {
+    public static class MSimpleViewHolder extends RecyclerView.ViewHolder {
         public final TextView title;
 
-        public SimpleViewHolder(View view) {
+        public MSimpleViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.title);
         }
