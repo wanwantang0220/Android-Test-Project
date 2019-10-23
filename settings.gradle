@@ -1,1 +1,1 @@
-include ':app', ':glpanoramalib'
+include ':app', ':glpanoramalib', ':rvmultilib'

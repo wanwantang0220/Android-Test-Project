@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initRecycleView() {
+        mList.add(AppConstant.LIST_TITLE18);
+        mList.add(AppConstant.LIST_TITLE17);
         mList.add(AppConstant.LIST_TITLE16);
         mList.add(AppConstant.LIST_TITLE0);
         mList.add(AppConstant.LIST_TITLE1);

@@ -463,7 +463,7 @@ public abstract class BaseExpandableRecyclerViewAdapter
         /**
          * optimize for partial invalidate,
          * when switching fold status.
-         * Default implementation is update the whole {android.support.v7.widget.RecyclerView.ViewHolder#itemView}.
+         * Default implementation is update the whole {androidx.recyclerview.widget.RecyclerView.ViewHolder#itemView}.
          * <p>
          * Warning:If the itemView is invisible , the callback will not be called.
          *

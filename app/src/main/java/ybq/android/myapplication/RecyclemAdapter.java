@@ -22,12 +22,14 @@ import ybq.android.myapplication.activity.KotlinLaunchActivity;
 import ybq.android.myapplication.activity.KotlinMainActivity;
 import ybq.android.myapplication.activity.LottieAnimationActivity;
 import ybq.android.myapplication.activity.NineActivity;
+import ybq.android.myapplication.activity.RecycleViewMultiActivity;
 import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.T360OpenGLActivity;
 import ybq.android.myapplication.activity.T36PanoramaActivity;
 import ybq.android.myapplication.activity.TabFragmentActivity;
 import ybq.android.myapplication.activity.TenActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
+import ybq.android.myapplication.activity.YunLinOldActivity;
 import ybq.android.myapplication.activity.ZhiHuFragmentActivity;
 import ybq.android.myapplication.app.AppConstant;
 import ybq.android.myapplication.hencoder.HenderMainActivity;
@@ -102,6 +104,12 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE16)) {
                 Intent intent = new Intent(mContext, T360OpenGLActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE17)) {
+                Intent intent = new Intent(mContext, YunLinOldActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE18)) {
+                Intent intent = new Intent(mContext, RecycleViewMultiActivity.class);
                 mContext.startActivity(intent);
             }
         });

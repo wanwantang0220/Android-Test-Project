@@ -57,4 +57,9 @@ dependencies {
     //OpenGL实现全景图
     //implementation 'com.github.CN-ZPH:weibo360panorama:v1.0.1'
     implementation project(":glpanoramalib")
+
+
+    //流式布局
+    implementation 'com.google.android:flexbox:1.1.1'
+    compile project(path: ':rvmultilib')
 }

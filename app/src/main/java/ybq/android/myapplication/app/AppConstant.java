@@ -20,4 +20,9 @@ public class AppConstant {
     public static final String LIST_TITLE14 = " Zhi Hu Fragmentation的使用 ";
     public static final String LIST_TITLE15 = " 全景图片显示 ";
     public static final String LIST_TITLE16 = " 全景图片显示 OPEN GL";
+    public static final String LIST_TITLE17 = " 养老版首页";
+    public static final String LIST_TITLE18 = " RecycleView 多布局不规则";
+
+
+
 }
