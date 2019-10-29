@@ -1,4 +1,4 @@
-package ybq.android.myapplication.view;
+package ybq.android.myapplication.util;
 
 import android.view.View;
 import android.widget.TextView;
@@ -7,7 +7,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import ybq.android.myapplication.R;
 
-public class SnackBar {
+public class SnackBarUtil {
 
 
     public static void  setSnackbarColor(Snackbar snackbar,int messageColor,

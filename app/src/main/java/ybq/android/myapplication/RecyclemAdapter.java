@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ybq.android.myapplication.activity.CalendarDateActivity;
+import ybq.android.myapplication.activity.CollapsingToolbarLayoutActivity;
 import ybq.android.myapplication.activity.EightActivity;
 import ybq.android.myapplication.activity.ExpandableRecyclerViewActivity;
 import ybq.android.myapplication.activity.KotlinBasic2Activity;
@@ -24,6 +25,8 @@ import ybq.android.myapplication.activity.LayoutMyStyleActivity;
 import ybq.android.myapplication.activity.LayoutSpannableGridActivity;
 import ybq.android.myapplication.activity.LayoutStaggeredGridActivity;
 import ybq.android.myapplication.activity.LottieAnimationActivity;
+import ybq.android.myapplication.activity.MaterialDesignActivity;
+import ybq.android.myapplication.activity.MyViewActivity;
 import ybq.android.myapplication.activity.NineActivity;
 import ybq.android.myapplication.activity.RecycleViewMultiActivity;
 import ybq.android.myapplication.activity.SevenActivity;
@@ -121,6 +124,15 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             } else if (title.equals(AppConstant.LIST_TITLE21)) {
                 Intent intent = new Intent(mContext, LayoutMyStyleActivity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE22)) {
+                Intent intent = new Intent(mContext, MaterialDesignActivity.class);
+                mContext.startActivity(intent);
+            } else if (title.equals(AppConstant.LIST_TITLE23)) {
+                Intent intent = new Intent(mContext, CollapsingToolbarLayoutActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE24)) {
+                Intent intent = new Intent(mContext, MyViewActivity.class);
                 mContext.startActivity(intent);
             }
         });

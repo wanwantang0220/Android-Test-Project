@@ -25,4 +25,8 @@ public class AppConstant {
     public static final String LIST_TITLE19 = " RecycleView layout_staggered_grid";
     public static final String LIST_TITLE20 = " RecycleView layout_spannable_grid";
     public static final String LIST_TITLE21 = " RecycleView 自定义";
+    public static final String LIST_TITLE22 = " Material Design";
+    public static final String LIST_TITLE23 = " CoordinatorLayout结合CollapsingToolbarLayout实现Toolbar折叠效果 ";
+
+    public static final String LIST_TITLE24 = " 自定义绘制";
 }
