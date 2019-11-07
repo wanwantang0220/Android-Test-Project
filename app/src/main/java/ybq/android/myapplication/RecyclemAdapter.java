@@ -21,6 +21,7 @@ import ybq.android.myapplication.activity.KotlinBasic2Activity;
 import ybq.android.myapplication.activity.KotlinBasic3Activity;
 import ybq.android.myapplication.activity.KotlinLaunchActivity;
 import ybq.android.myapplication.activity.KotlinMainActivity;
+import ybq.android.myapplication.activity.LayoutAnimationActivity;
 import ybq.android.myapplication.activity.LayoutMyStyleActivity;
 import ybq.android.myapplication.activity.LayoutSpannableGridActivity;
 import ybq.android.myapplication.activity.LayoutStaggeredGridActivity;
@@ -133,6 +134,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE24)) {
                 Intent intent = new Intent(mContext, MyViewActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE25)) {
+                Intent intent = new Intent(mContext, LayoutAnimationActivity.class);
                 mContext.startActivity(intent);
             }
         });
