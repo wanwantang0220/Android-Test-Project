@@ -34,6 +34,7 @@ import ybq.android.myapplication.activity.SevenActivity;
 import ybq.android.myapplication.activity.T360OpenGLActivity;
 import ybq.android.myapplication.activity.T36PanoramaActivity;
 import ybq.android.myapplication.activity.TabFragmentActivity;
+import ybq.android.myapplication.activity.ViewScrollerActivity;
 import ybq.android.myapplication.activity.WaveViewActivity;
 import ybq.android.myapplication.activity.YunLinOldActivity;
 import ybq.android.myapplication.activity.ZhiHuFragmentActivity;
@@ -137,6 +138,9 @@ public class RecyclemAdapter extends RecyclerView.Adapter<RecyclemAdapter.ComVie
                 mContext.startActivity(intent);
             }else if (title.equals(AppConstant.LIST_TITLE25)) {
                 Intent intent = new Intent(mContext, LayoutAnimationActivity.class);
+                mContext.startActivity(intent);
+            }else if (title.equals(AppConstant.LIST_TITLE26)) {
+                Intent intent = new Intent(mContext, ViewScrollerActivity.class);
                 mContext.startActivity(intent);
             }
         });

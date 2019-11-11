@@ -29,4 +29,5 @@ public class AppConstant {
     public static final String LIST_TITLE23 = " CoordinatorLayout结合CollapsingToolbarLayout实现Toolbar折叠效果 ";
     public static final String LIST_TITLE24 = " 自定义绘制";
     public static final String LIST_TITLE25 = " 动画深入分析";
+    public static final String LIST_TITLE26 = " View Scroller ";
 }
